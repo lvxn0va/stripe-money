@@ -1,11 +1,11 @@
 development: &non_production_settings
-  stripe_secret: 'M0TrGI8bJB5gWUjvC7dYqvhzcfnuDt4K'
-  stripe_public: 'pk_PwyeMrfgjrXzpjrX6JNw85WSWOcqB'
+  stripe_secret: 'xxx'
+  stripe_public: 'xxx'
     
 test:
   <<: *non_production_settings
 
 production:
 # stripe_keys:
-#   Api_Secret = "M0TrGI8bJB5gWUjvC7dYqvhzcfnuDt4K"
-#   Api_Public = "pk_PwyeMrfgjrXzpjrX6JNw85WSWOcqB"
+#   Api_Secret = "xxx"
+#   Api_Public = "xxx"
