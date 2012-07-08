@@ -1,6 +1,6 @@
 development: &non_production_settings
-  stripe_secret: 'xxx'
-  stripe_public: 'xxx'
+  stripe_secret: 'M0TrGI8bJB5gWUjvC7dYqvhzcfnuDt4K'
+  stripe_public: 'pk_PwyeMrfgjrXzpjrX6JNw85WSWOcqB'
     
 test:
   <<: *non_production_settings
