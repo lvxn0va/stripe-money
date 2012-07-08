@@ -1,4 +1,7 @@
 class User < ActiveRecord::Base
+  #include Stripe
+  #Stripe.api_key = APP_CONFIG['stripe_secret']
+  
   include Clearance::User
   attr_accessor :stripe_card_token
   before_save :update_stripe

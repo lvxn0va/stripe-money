@@ -1,4 +1,7 @@
 class Addition < ActiveRecord::Base
+  #include Stripe
+  #Stripe.api_key = APP_CONFIG['stripe_secret']
+  
   belongs_to :user
   belongs_to :account
   belongs_to :amount
