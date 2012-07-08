@@ -3,7 +3,7 @@ db/*.sqlite3
 log/*.log
 tmp/
 .sass-cache/
-/config/app_config.yml
+config/app_config.yml
 *.rbc
 *.sassc
 .sass-cache
