@@ -3,13 +3,31 @@
 <head>
   <title>Money</title>
   <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "https://js.stripe.com/v1/", "application" %>
+  <%= javascript_include_tag "https://js.stripe.com/v1/" %>
   <%= csrf_meta_tags %>
   <%= tag :meta, :name => "stripe-key", :content => STRIPE_PUBLIC_KEY %>
 </head>
 <body>
-<%= render "shared/header" %>
+	<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="/">Stripe Money</a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li><%= link_to "Users", users_path %></li>
+            <li><%= link_to "Additions", :controller => "additions" %></li>
+            <li><%= link_to "Accounts" %></li>
+            <li><%= link_to "Contact Us" %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 <%= yield %>
-
 </body>
 </html>
